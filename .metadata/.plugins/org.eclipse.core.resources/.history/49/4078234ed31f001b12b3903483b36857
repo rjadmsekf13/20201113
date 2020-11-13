@@ -1,0 +1,53 @@
+package Tlqk.db;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+/**
+ * @PackageName		: Tlqk.db
+ * @FileName		: DBManager.java
+ * @Since			: 2020. 11. 6
+ * @Author			: KB
+ * @Description		: 
+ * =====================================================================================
+ * 								   Modification History
+ * =====================================================================================
+ * Date				Author				Note
+ * -------------------------------------------------------------------------------------
+ * 2020. 11. 6		KB				최초 작성
+ *
+ */
+public class DBManager {
+public void insert(Member member)
+{
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	
+	try
+	{
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.90:1521:xe", "scott", "1234");
+		pstmt = conn.prepareStatement("INSERT INTO \"SCOTT\".\"MEMBER_mh\"" + 
+				"(ID, PASSWD, DATE_NUMBER, EMAIL, ADDRESS, TEL, NAME,reg_date)  " + 
+				"VALUES (?, ?, ?, ?, ?, ?, ?,sysdate)");
+		
+		pstmt.setString(1, member.getpid());
+		pstmt.setString(2, member.getppw());
+		pstmt.setString(3, member.getpgender());
+		pstmt.setString(4, member.getpe_mail());
+		pstmt.setString(5, member.getpwnth());
+		pstmt.setString(6, member.getpcall());
+		pstmt.setString(7, member.getpname());
+	}
+	catch(Exception e)
+	{
+		
+	}
+	finally
+	{
+		
+	}
+}
+}

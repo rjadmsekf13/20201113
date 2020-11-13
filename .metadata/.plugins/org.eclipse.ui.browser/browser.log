@@ -1,0 +1,14 @@
+
+11월 03, 2020 10:06:00.14 NEW SESSION
+11월 03, 2020 10:06:00.14 [1103/100600.013:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 04, 2020 09:36:29.43 NEW SESSION
+11월 04, 2020 09:36:29.43 [1104/093629.041:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 05, 2020 09:50:41.816 NEW SESSION
+11월 05, 2020 09:50:41.816 [1105/095041.814:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 09, 2020 10:08:32.943 NEW SESSION
+11월 09, 2020 10:08:32.943 [1109/100832.942:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 09, 2020 10:24:12.835 [1516:3000:1109/102412.835:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+11월 09, 2020 10:24:55.32 [1516:3000:1109/102455.032:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.

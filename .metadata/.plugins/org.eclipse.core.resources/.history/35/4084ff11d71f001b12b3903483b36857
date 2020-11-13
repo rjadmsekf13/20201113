@@ -1,0 +1,42 @@
+package Tlqk.mem;
+
+/**
+ * @PackageName		: Tlqk.mem
+ * @FileName		: Member.java
+ * @Since			: 2020. 11. 6
+ * @Author			: KB
+ * @Description		: 
+ * =====================================================================================
+ * 								   Modification History
+ * =====================================================================================
+ * Date				Author				Note
+ * -------------------------------------------------------------------------------------
+ * 2020. 11. 6		KB				최초 작성
+ *
+ */
+public class Member {
+	String pname;
+	String pgender;
+	String pid;
+	String ppw;
+	String ppwcheck;
+	String pwnth;
+	String pcall;
+	String pe_mail;
+	String phobby;
+	
+	public Member(String pname, String pgender, String pid, String ppw, String ppwcheck, 
+			String pwnth, String pcall, String pe_mail, String phobby)
+	{
+		super();
+		this.pname = pname;
+		this.pgender = pgender;
+		this.pid = pid;
+		this.ppw = ppw;
+		this.ppwcheck = ppwcheck;
+		this.pwnth = pwnth;
+		this.pcall = pcall;
+		this.pe_mail = pe_mail;
+		this.phobby = phobby;
+	}
+}
